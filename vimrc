@@ -30,8 +30,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'ervandew/supertab'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-gocode.vim'
 call plug#end()
 
 "=====================================================
@@ -605,14 +603,3 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 nmap <Leader>gi <Plug>(grammarous-open-info-window)
 nmap <Leader>gc <Plug>(grammarous-close-info-window)
 nmap <Leader>gf <Plug>(grammarous-fixit)
-
-" vim: sw=2 sw=2 et
-" Go autocompletion
-call asyncomplete#register_source(asyncomplete#sources#gocode#get_source_options({
-    \ 'name': 'gocode',
-    \ 'whitelist': ['go'],
-    \ 'completor': function('asyncomplete#sources#gocode#completor'),
-    \ 'config': {
-    \    'gocode_path': expand('~/go/bin/gocode')
-    \  },
-    \ }))
