@@ -30,6 +30,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'ervandew/supertab'
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
 "=====================================================
@@ -103,7 +104,8 @@ set t_Co=256
 set background=dark
 let g:molokai_original = 1
 let g:rehash256 = 1
-colorscheme molokai
+"colorscheme molokai
+colorscheme onedark 
 
 augroup filetypedetect
   command! -nargs=* -complete=help Help vertical belowright help <args>
