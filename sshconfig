@@ -1,5 +1,6 @@
+Host *
+  StrictHostKeyChecking no
 Host github.com
   IdentityFile ~/.ssh/github_rsa
-
 Host gitlab.com
   IdentityFile ~/.ssh/gitlab_rsa

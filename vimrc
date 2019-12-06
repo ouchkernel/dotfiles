@@ -31,6 +31,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 call plug#end()
 
 "=====================================================
@@ -45,6 +47,11 @@ set ttyfast
 if !has('nvim')
   set ttymouse=xterm2
   set ttyscroll=3
+endif
+
+if has('nvim')
+    " Enable deoplete on startup
+    let g:deoplete#enable_at_startup = 1
 endif
 
 set laststatus=2
