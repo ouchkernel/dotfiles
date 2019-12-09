@@ -14,7 +14,7 @@ alias ..='cd ..'
 alias t="tig status"
 alias tigs="tig status" #old habits don't die
 alias d='git diff' 
-alias vi='vim'
+alias vi='nvim'
 
 case `uname` in
   Darwin)
@@ -52,7 +52,7 @@ export LANG="en_US.UTF-8"
 
 export PATH="/usr/local/go/bin:$GOBIN:$HOME/.cargo/bin:$PATH"
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx
 export CLICOLOR=1
 
