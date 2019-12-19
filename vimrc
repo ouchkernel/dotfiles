@@ -33,6 +33,7 @@ Plug 'ervandew/supertab'
 Plug 'joshdick/onedark.vim'
 Plug 'Shougo/deoplete.nvim'
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+Plug 'buoto/gotests-vim'
 call plug#end()
 
 "=====================================================
@@ -400,7 +401,7 @@ vnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gb :Gblame<CR>
 
 " ==================== vim-go ====================
-au filetype go inoremap <buffer> . .<C-x><C-o>
+"au filetype go inoremap <buffer> . .<C-x><C-o>
 let g:go_fmt_fail_silently = 1
 let g:go_fmt_command = "goimports"
 let g:go_debug_windows = {
